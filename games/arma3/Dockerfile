@@ -27,7 +27,24 @@ RUN         dpkg --add-architecture i386 \
                 libnss-wrapper \
                 libnss-wrapper:i386 \
                 libtbb2 \
-                libtbb2:i386
+                libtbb2:i386 \
+				 wget \
+				file \
+				tar \
+				bzip2 \ 
+				gzip \
+				unzip \
+				bsdmainutils \
+				python3 \
+				util-linux \
+				binutils\
+				bc \
+				jq \
+				tmux \
+				netcat \
+				lib32gcc1 \
+				lib32stdc++6 \
+				libsdl2-2.0-0:i386 
 
 ## Configure locale
 RUN         update-locale lang=en_US.UTF-8 \
